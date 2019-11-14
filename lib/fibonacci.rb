@@ -6,5 +6,13 @@ def iterative_fib(n)
     res = sequence[i - 1] + sequence[i - 2]
     sequence << res
   end
-  sequence
+  sequence.last
+end
+
+def recursive_fib(n)
+  if n < 2
+    n
+  else
+    recursive_fib(n - 1) + recursive_fib(n - 2)
+  end  
 end
